@@ -12,11 +12,11 @@ const calculadoraArea = document.querySelector("#calculadoraArea")
 calculadoraArea.innerHTML = /* HTML */ `
   <div>
     <div>
-      <label>Primer numero</label>
+      <label class="primer-numero">Primer numero</label>
       <input id="numeroSuperior" type="number" />
     </div>
     <div>
-      <label>Segundo numero</label>
+      <label class="segundo-numero">Segundo numero</label>
       <input id="numeroInferior" type="number" />
     </div>
     <button id="btnsuma">sumar</button>

@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+@font-face {
+  font-family: "lumanosimo";
+  src: url(/assets/fonts/Lumanosimo/Lumanosimo-Regular.ttf);
+}
 
 a {
   font-weight: 500;
@@ -74,14 +78,28 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin: 10px;
 }
 button:hover {
   border-color: #646cff;
+  transition-duration: 750ms;
 }
+
+#lista-superheroes:hover {
+  color: goldenrod;
+  transition-duration: 750ms;
+}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.segundo-numero,
+.primer-numero {
+  font-family: "lumanosimo";
+  font-size: large;
+}
+
 #numeroSuperior,
 #numeroInferior {
   display: inline-block;
@@ -96,10 +114,33 @@ button:focus-visible {
   color: greenyellow;
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  height: auto;
+  height: 50px;
   width: auto;
+  font-size: large;
+  margin-top: 10px;
+  border: 1px solid transparent;
+  transition: border-color 0.25s;
 }
+
+#resultado:hover {
+  background-color: #1a1a1a;
+  color: red;
+  transition-duration: 750ms;
+  border-color: orange;
+}
+
+#lista-superheroes {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #646cff;
+  font-size: x-large;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

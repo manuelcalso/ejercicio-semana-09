@@ -7,12 +7,9 @@ console.log(superheroes)
 
 ///selectores
 const superheroesArea = document.querySelector("#lista-superheroes")
-
 const btnsuma = document.querySelector("#btnsuma")
 const numeroSuperior = document.querySelector("#numeroSuperior")
 const numeroInferior = document.querySelector("#numeroInferior")
-
-//console.log(superheroesArea)
 
 ////eventos
 const init = () => {
